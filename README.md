@@ -6,3 +6,5 @@ Los archivos CANDIDATUURAS_2024.csv y DIP_FED_2024.csv son  el insumo para la ba
 En resultados_distrito.R está el código para obtener los resultados electorales a nivel distrito, así como el cálculo del índice Herfindahl–Hirschman, el número efectivo de partidos y el índice de Molinar.
 
 En HistogramaN.R esrá el código para generar la figura 2, mientras que en mapaN20024.R está el código para generar la figura 3.
+
+Comentarios a rosencrantz@flacso.edu.mx
