@@ -17,12 +17,12 @@ piqr    <- (q3 + q1 - 2 * med) / iqr                   # Asimetría de Bowley (I
 library(sysfonts)
 library(showtext)
 
-# 1) Intenta usar la Garamond del sistema (macOS suele tenerla como "Garamond").
-#    Si no está, usa EB Garamond desde Google como alias "Garamond".
+# Intentar usar la Garamond del sistema.
+# Si no está, usar EB Garamond desde Google como alias "Garamond".
 if (!("Garamond" %in% sysfonts::font_families())) {
   try({
     sysfonts::font_add(family = "Garamond",
-                       regular = "/Library/Fonts/Garamond.ttf")  # ajusta ruta si la tienes en otro lado
+                       regular = "/Library/Fonts/Garamond.ttf")
   }, silent = TRUE)
 }
 if (!("Garamond" %in% sysfonts::font_families())) {
@@ -31,7 +31,6 @@ if (!("Garamond" %in% sysfonts::font_families())) {
 showtext_auto(enable = TRUE)
 showtext_opts(dpi = 300)  # útil para consistencia en Rmd/Quarto
 base_font <- "Garamond"
-
 
 ggplot(resultados2024.distritos, aes(x = N)) +
   # Histograma:
