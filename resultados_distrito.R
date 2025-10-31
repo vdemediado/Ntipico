@@ -200,7 +200,13 @@ resultados2024.distritos$HH <- with(resultados2024.distritos,
 ## Cálculo de número efectivo de partidos
 resultados2024.distritos$N <- 1 / resultados2024.distritos$HH
 
-## Histograma y N promedio
+## Cálculo de índice de Molinar
+resultados2024.distritos$p1 <- with(resultados2024.distritos, # Partido más votado
+                                    pmax(alianza.morena.p, morena.solo.p, pt.solo.p, pvem.solo.p, alianza.opo.p, pan.solo.p, pri.solo.p, prd.solo.p, mc.p, independientes.p))
+resultados2024.distritos$NP <- 1 + with(resultados2024.distritos,
+                                        N*((HH - p1^2)/HH))
+
+## Histograma de N y N promedio
 library("ggstatsplot")
 gghistostats(
   data = resultados2024.distritos,
@@ -209,6 +215,6 @@ gghistostats(
 )
 
 ## Descriptiva de N y HH
-summary(resultados2024.distritos$N)
 summary(resultados2024.distritos$HH)
-
+summary(resultados2024.distritos$N)
+summary(resultados2024.distritos$NP)
