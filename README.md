@@ -1,5 +1,5 @@
 # Ntipico
-Material para replicación de análisis en el artículo "La dispersión del voto en las elecciones federales de 2024: El número efectivo de partidos típico", Revista Mexicana de Derecho Electoral, 12(2).
+Material para replicación de análisis en el artículo "La dispersión del voto en las elecciones federales de 2024: El número efectivo de partidos típico", Revista Mexicana de Derecho Electoral, 12(2).  https://doi.org/10.22201/iij.24487910e.2025.22.20644
 
 Los archivos CANDIDATURAS_2024.csv y DIP_FED_2024.csv son  el insumo para la base de datos sobre la que se lleva a cabo el anális,
 
